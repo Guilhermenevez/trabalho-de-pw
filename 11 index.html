@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineStream</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      background-color: #e50914;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #111;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #e50914;
+    }
+
+    .section {
+      display: none;
+      padding: 20px;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #e50914;
+      padding-bottom: 5px;
+    }
+
+    .movies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .movie {
+      background-color: #111;
+      width: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .movie img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-info {
+      padding: 10px;
+      text-align: center;
+    }
+
+    .movie-info h3 {
+      margin: 10px 0;
+    }
+
+    .movie-info button {
+      background-color: #e50914;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .movie-info button:hover {
+      background-color: #ff2f2f;
+    } img {
+      max-height: 360px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="c:\Users\guilh\Downloads\0001-6702943791505777048-removebg-preview.png" alt="">    
+  </header>
+
+  <nav>
+    <a href="#" class="tab-link active" data-tab="cartaz">Em Cartaz</a>
+    <a href="#" class="tab-link" data-tab="filmes">Filmes</a>
+    <a href="#" class="tab-link" data-tab="series">Séries</a>
+    <a href="#" class="tab-link" data-tab="assinatura">Assinatura</a>
+  </nav>
+
+  <!-- Seção Em Cartaz -->
+  <div id="cartaz" class="section active">
+    <h2>🎬 Em Cartaz no Cinema</h2>
+    <div class="movies">
+      <div class="movie">
+        <img src="https://br.web.img2.acsta.net/c_310_420/img/39/68/3968d0b052682d5c6625be54c9b513ef.png" alt="Filme 1">
+        <div class="movie-info">
+          <h3>Minecraft</h3>
+          <button>Comprar Ingresso</button>
+        </div>
+      </div>
+      <div class="movie">
+        <img src="https://br.web.img3.acsta.net/c_310_420/img/56/0c/560c72bf877f88472877898cebe00ff0.jpg" alt="Filme 2">
+        <div class="movie-info">
+          <h3>Capitão américa: Admirável mundo novo</h3>
+          <button>Comprar Ingresso</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção Filmes -->
+<div id="filmes" class="section">
+  <h2>🎞️ Filmes</h2>
+
+  <h3>🎯 Ação</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/98/32/19870786.jpg"><div class="movie-info"><h3>Batman: O cavaleiro da trevas</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/22/38/19873277.jpg"><div class="movie-info"><h3>Tropa de elite</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/23/02/02/17/22/5750515.jpg"><div class="movie-info"><h3>O pacto</h3><button>Assistir</button><div></div>
+      ></div></div>
+  </div>
+
+  <h3>🚀 Ficção</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/10/31/20/39/476171.jpg"><div class="movie-info"><h3>Interestelar</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/62/20122008.jpg"><div class="movie-info"><h3>De volta para o futuro</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/87/30/40/20028676.jpg"><div class="movie-info"><h3>Avatar</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>👻 Terror</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/26/84/19873738.jpg"><div class="movie-info"><h3>Terror 1</h3>O exorcista<button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/210/166/21016629_2013062820083878.jpg"><div class="movie-info"><h3>Invocação do mal</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/17/03/30/22/44/345288.jpg"><div class="movie-info"><h3>Terror 3</h3>It: A coisa<button>Assistir</button></div></div>
+  </div>
+
+  <h3>🐭 Animação</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/05/27/21/27/291561.jpg"><div class="movie-info"><h3>Como treinar seu dragão 2</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/84/28/19962110.jpg"><div class="movie-info"><h3>O rei leão</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/54/04/20150812.jpg"><div class="movie-info"><h3>Shrek</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>😂 Comédia</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/90/95/85/20122112.jpg"><div class="movie-info"><h3>Curtindo a vida adoidado</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img2.acsta.net/c_310_420/pictures/16/01/28/19/55/412201.jpg"><div class="movie-info"><h3>Deadpool</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/10/06/22/23/328151.jpg"><div class="movie-info"><h3>O grande ditador</h3><button>Assistir</button></div></div>
+  </div>
+</div>
+
+<!-- Seção Séries -->
+<div id="series" class="section">
+  <h2>📺 Séries</h2>
+
+  <h3>🎯 Ação</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_2637_serie-de-the-last-of-us-3.jpg?default=poster"><div class="movie-info"><h3>The last of us</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_3082_reacher-poster-easy-resize.com.jpg?default=poster"><div class="movie-info"><h3>Reacher</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_383_MV5BMjI1MDAwNDM4OV5BMl5BanBnXkFtZTgwNjUwNDIxNjM@._V1_SY1000_SX800_AL_.jpg?default=poster"><div class="movie-info"><h3>The flash</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>🚀 Ficção</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_932_st-4.jpg?default=poster"><div class="movie-info"><h3>Stranger things</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_3208_fallout-poster.jpg?default=poster"><div class="movie-info"><h3>Fallout</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_3480_temporada-1-easy-resize.com.jpg?default=poster"><div class="movie-info"><h3>Dune: The sisterhood</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>👻 Terror</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/22/02/04/12/42/2264086.jpg"><div class="movie-info"><h3>Origem</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_3798_goosebumps-poster.jpg?default=poster"><div class="movie-info"><h3>Goosebumps</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img2.acsta.net/c_310_420/pictures/18/11/12/13/38/3629995.jpg"><div class="movie-info"><h3>Sobrenatural</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>🐭 Animação</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://cinema10.com.br/upload/series/series_8_the.jpg?default=poster"><div class="movie-info"><h3>Os simpsons</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/03/01/16/59/300795.jpg"><div class="movie-info"><h3>Dragon ball Z</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/15/07/06/23/04/265554.jpg"><div class="movie-info"><h3>Super choque</h3><button>Assistir</button></div></div>
+  </div>
+
+  <h3>😂 Comédia</h3>
+  <div class="movies">
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/02/04/14/08/054280.jpg"><div class="movie-info"><h3>Todo mundo odeia o chris</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/14/02/04/13/20/128334.jpg"><div class="movie-info"><h3>The office</h3><button>Assistir</button></div></div>
+    <div class="movie"><img src="https://br.web.img3.acsta.net/c_310_420/pictures/15/09/04/21/08/018215.jpg"><div class="movie-info"><h3>Mr. Bean</h3><button>Assistir</button></div></div>
+  </div>
+</div>
+
+</div><!-- Seção Assinatura -->
+<div id="assinatura" class="section">
+  <h2>💳 Planos de Assinatura</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+    <!-- Plano Básico -->
+    <div style="background-color: #111; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+      <h3 style="color: #e50914;">Básico</h3>
+      <p style="font-size: 24px;">R$ 19,90/mês</p>
+      <ul style="list-style: none; padding: 0; margin: 20px 0;">
+        <li>✔ 1 tela</li>
+        <li>✔ Qualidade padrão</li>
+        <li>✔ Acesso ilimitado</li>
+      </ul>
+      <button style="background-color: #e50914; border: none; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Assinar</button>
+    </div>
+
+    <!-- Plano Padrão -->
+    <div style="background-color: #222; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 0 15px rgba(0,0,0,0.7);">
+      <h3 style="color: #e50914;">Padrão</h3>
+      <p style="font-size: 24px;">R$ 29,90/mês</p>
+      <ul style="list-style: none; padding: 0; margin: 20px 0;">
+        <li>✔ 2 telas simultâneas</li>
+        <li>✔ Qualidade HD</li>
+        <li>✔ Acesso em TV, PC e celular</li>
+      </ul>
+      <button style="background-color: #e50914; border: none; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Assinar</button>
+    </div>
+
+    <!-- Plano Premium -->
+    <div style="background-color: #333; border-radius: 10px; width: 300px; padding: 20px; text-align: center; box-shadow: 0 0 20px rgba(0,0,0,0.9);">
+      <h3 style="color: #e50914;">Premium</h3>
+      <p style="font-size: 24px;">R$ 39,90/mês</p>
+      <ul style="list-style: none; padding: 0; margin: 20px 0;">
+        <li>✔ Até 4 telas simultâneas</li>
+        <li>✔ Qualidade 4K Ultra HD</li>
+        <li>✔ Download offline</li>
+      </ul>
+      <button style="background-color: #e50914; border: none; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Assinar</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-link');
+  const sections = document.querySelectorAll('.section');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      // Remove a classe 'active' de todos os links e seções
+      tabs.forEach(t => t.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+
+      // Adiciona a classe 'active' ao item clicado e à seção correspondente
+      const target = tab.getAttribute('data-tab');
+      tab.classList.add('active');
+      document.getElementById(target).classList.add('active');
+    });
+  });
+</script>
+
+
+</body>
+   </html>
+   
